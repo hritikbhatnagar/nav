@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="p41.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/03c9b2c9ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="flex justify-between bg-[#FBCEB1]">
+        <div class="box1 ml-4  flex justify-center items-center">
+            <h1 class="font-bold text-4xl underline decoration-lime-500 text-red-500 ">Food Hub</h1>
+        </div>
+        <div class="box2 mr-4 hidden md:block ">
+            <ul class="flex justify-end gap-8 text-lg">
+                <li>Home</li>
+                <li>Gallery</li>
+                <li>Our work</li>
+                <li>Career</li>
+            </ul>
+        </div>
+        <div class="box3 text-2xl mr-4 flex justify-center items-center md:hidden">
+            <i class="fa-solid fa-bars j"></i>
+        </div>
+        <div class="box4 w-screen h-screen bg-yellow-200 fixed hidden">
+           <div class="box5 flex justify-end mr-8 mt-4 text-3xl"> <i class="fa-solid fa-xmark"></i></div>
+            <ul class="flex flex-col items-center justify-center  h-[100%]   gap-[20px] text-4xl">
+                <li>Home</li>
+                <li>Gallery</li>
+                <li>Our work</li>
+                <li>Career</li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+$(".j").click(function()
+{
+$(".box4").slideDown(1000);
+});
+$(".box5").click(function()
+{
+$(".box4").slideUp(500);
+});
+    </script>
+</body>
+</html>
